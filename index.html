@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bruno Bartoszek — Data Analyst & Sales Operations</title>
+  <meta name="description" content="Bruno — Data Analyst, Sales Operations & Finance. Portfolio." />
+  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)" />
+  <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin />
+  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600;800;900&display=swap)" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-shapes"><span class="sq"></span><span class="ci"></span><span class="tr"></span></div>
+      <div class="bar"><div class="bar-fill" id="barFill"></div></div>
+      <div class="loader-meta">
+        <span data-i18n="loading">Loading data</span>
+        <span id="pct">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="stars"></canvas>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="#home" class="brand">
+      <canvas id="logo" width="88" height="88"></canvas>
+      <span>BRUNO BARTOSZEK </span>
+    </a>
+    <nav class="links">
+      <a href="#experience" data-i18n="nav.exp">Experience</a>
+      <a href="#value" data-i18n="nav.value">Value</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="controls">
+      <button id="langBtn" class="ctrl" aria-label="Language">FR</button>
+
+      <button id="themeBtn" class="theme-toggle" aria-label="Dark / light mode">
+        <span class="knob">
+          <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><g stroke-width="2" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.2" y1="4.2" x2="5.6" y2="5.6"/><line x1="18.4" y1="18.4" x2="19.8" y2="19.8"/><line x1="4.2" y1="19.8" x2="5.6" y2="18.4"/><line x1="18.4" y1="5.6" x2="19.8" y2="4.2"/></g></svg>
+          <svg class="moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </span>
+      </button>
+
+      <div class="accent">
+        <button id="accentBtn" class="ctrl" aria-label="Accent color"><span class="dot"></span></button>
+        <div class="swatches" id="swatches">
+          <button data-color="#e63322" style="--c:#e63322"></button>
+          <button data-color="#1d4ed8" style="--c:#1d4ed8"></button>
+          <button data-color="#f5b700" style="--c:#f5b700"></button>
+          <button data-color="#0f9d58" style="--c:#0f9d58"></button>
+          <label class="custom" title="Custom"><input type="color" id="customColor" value="#e63322" /></label>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="bh bh-circle"></div>
+      <div class="bh bh-square"></div>
+      <div class="bh bh-tri"></div>
+      <div class="bh bh-line"></div>
+      <h1 class="typed-wrap"><span id="typed"></span><span class="caret"></span></h1>
+      <p class="hero-sub reveal" data-i18n="hero.sub">Data Analyst · Sales Operations · Finance</p>
+      <p class="hero-pitch reveal" data-i18n="hero.pitch">I turn data into decisions that grow revenue.</p>
+      <a href="#experience" class="btn reveal" data-i18n="hero.cta">See my journey</a>
+      <div class="scroll-hint"><span></span></div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2 class="sec-title reveal"><span class="num">01</span><span data-i18n="exp.title">Experience</span></h2>
+      <p class="sec-hint reveal" data-i18n="exp.hint">Click a role to see my responsibilities.</p>
+      <div class="timeline" id="timeline">
+        <div class="line"><div class="line-fill" id="lineFill"></div></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <h2 class="sec-title reveal"><span class="num">02</span><span data-i18n="edu.title">Education</span></h2>
+      <div class="edu reveal">
+        <div class="edu-shape"></div>
+        <div>
+          <p class="edu-degree" data-i18n="edu.degree">Master's Degree — Commerce, Finance & Business Analytics</p>
+          <p class="edu-school">ISTEC Business School — Paris</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE -->
+    <section id="value" class="section">
+      <h2 class="sec-title reveal"><span class="num">03</span><span data-i18n="value.title">What I can bring to your company </span></h2>
+      <div class="value-grid" id="valueGrid"></div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="sec-title reveal"><span class="num">04</span><span data-i18n="skills.title">Technical skills</span></h2>
+      <p class="sec-hint reveal" data-i18n="skills.hint"> Overview of my data stack. Click on elements to know more about a specific skill.</p>
+      <div class="ptable" id="ptable"></div>
+      <div class="legend reveal" id="legend"></div>
+
+      <h3 class="sub-title reveal" data-i18n="soft.title">Soft skills</h3>
+      <div class="radar-wrap reveal"><canvas id="radar" width="560" height="560"></canvas></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="sec-title reveal"><span class="num">05</span><span data-i18n="projects.title">Projects</span></h2>
+      <div class="projects" id="projectsGrid"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2 class="big reveal" data-i18n="contact.title">Let's work together.</h2>
+      <div class="contact-links reveal">
+        <a class="btn" href="mailto:brunobartoszek6@gmail.com">brunobartoszek6@gmail.com</a>
+        <a class="btn ghost" href="[linkedin.com](https://www.linkedin.com/in/bruno-barto)" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" href="[github.com](https://github.com/brunobarto)" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> © Bruno Bartoszek </footer>
+
+  <!-- POP WINDOW -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="window" role="dialog" aria-modal="true">
+      <div class="win-bar">
+        <span class="win-dots"><i></i><i></i><i></i></span>
+        <span id="winTitle" class="win-title"></span>
+        <button id="winClose" class="win-close" aria-label="Close">✕</button>
+      </div>
+      <div class="win-body" id="winBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
