@@ -22,7 +22,7 @@ const T = {
   fr: {
     loading: "Chargement des données",
     "nav.exp": "Parcours", "nav.value": "Apport", "nav.skills": "Compétences", "nav.projects": "Projets", "nav.contact": "Contact",
-    hello: " Salut ! ",
+    hello: " Salut ! moi c'est  ",
     "hero.sub": "Data Analyst · Sales Operations · Finance",
     "hero.pitch": "Je transforme les donnée en décisions qui font croître le chiffre d'affaires.",
     "hero.cta": "Voir mon parcours",
