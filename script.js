@@ -429,7 +429,7 @@ function drawRadar(p) {
   rx.fillStyle = accent + "55"; rx.fill();
   rx.strokeStyle = accent; rx.lineWidth = 4; rx.stroke();
   SOFT.forEach((s, i) => { const [x, y] = pt(i, R * s.v * p); rx.fillStyle = fg; rx.fillRect(x - 6, y - 6, 12, 12); });
-  rx.fillStyle = fg; rx.font = "700 20px Inconsolata, monospace"; rx.textBaseline = "middle";
+  rx.fillStyle = fg; rx.font = "600 20px Inconsolata, monospace"; rx.textBaseline = "middle";
   SOFT.forEach((s, i) => {
     const [x, y] = pt(i, R + 34);
     rx.textAlign = Math.abs(x - c) < 10 ? "center" : x > c ? "left" : "right";
