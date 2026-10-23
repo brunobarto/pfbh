@@ -7,13 +7,13 @@ const T = {
     "hero.sub": "Data Analyst · Sales Operations · Finance",
     "hero.pitch": "I turn data into decisions that grow revenue.",
     "hero.cta": "See my journey",
-    "exp.title": "Experience", "exp.hint": "Click a role to see responsibilities.",
+    "exp.title": "Experience", "exp.hint": "Click a role to see my responsibilities.",
     more: "Responsibilities →",
     "edu.title": "Education",
     "edu.degree": "Master's Degree — Commerce, Finance & Business Analytics",
-    "value.title": "What I bring",
+    "value.title": "What I can bring to your company",
     "skills.title": "Technical skills",
-    "skills.hint": "The periodic table of my data stack. Click an element.",
+    "skills.hint": " A global overview of my skills . Click an element to learn more.",
     "soft.title": "Soft skills",
     "projects.title": "Projects",
     "contact.title": "Let's work together.",
@@ -22,17 +22,17 @@ const T = {
   fr: {
     loading: "Chargement des données",
     "nav.exp": "Parcours", "nav.value": "Apport", "nav.skills": "Compétences", "nav.projects": "Projets", "nav.contact": "Contact",
-    hello: " Salut ! moi c'est  ",
+    hello: "Salut! Moi c'est ",
     "hero.sub": "Data Analyst · Sales Operations · Finance",
-    "hero.pitch": "Je transforme les donnée en décisions qui font croître le chiffre d'affaires.",
+    "hero.pitch": "Je transforme les données en décisions qui font croître le chiffre d'affaires.",
     "hero.cta": "Voir mon parcours",
     "exp.title": "Expérience", "exp.hint": "Cliquez sur un poste pour voir les responsabilités.",
     more: "Responsabilités →",
     "edu.title": "Formation",
     "edu.degree": "Master — Commerce, Finance & Business Analytics",
-    "value.title": "Ce que je peux apporter à votre entreprise",
+    "value.title": "Ce que je peux apporter à votre équipe",
     "skills.title": "Compétences techniques",
-    "skills.hint": "Un apercu de mes compétences data. Cliquez sur un élément pour plus de détails.",
+    "skills.hint": "Un apercu visuel de mes compétences techniques. Cliquez sur un élément pour en savoir plus.",
     "soft.title": "Soft skills",
     "projects.title": "Projets",
     "contact.title": "Travaillons ensemble.",
@@ -116,7 +116,7 @@ const VALUES = [
 
 const CATS = {
   lang: { color: "#e63322", en: "Languages", fr: "Langages" },
-  viz:  { color: "#1d4ed8", en: "Vizualisation", fr: "Visualisation" },
+  viz:  { color: "#1d4ed8", en: "Visualisation", fr: "Visualisation" },
   data: { color: "#f5b700", en: "Data engineering", fr: "Data engineering" },
   biz:  { color: "#0f9d58", en: "Business & Methods", fr: "Business & Méthodes" }
 };
@@ -137,10 +137,10 @@ const SKILLS = [
 ];
 
 const SOFT = [
-  { en: "Communication", fr: "Communication", v: .95 },
-  { en: "Stakeholders", fr: "Parties prenantes", v: .9 },
-  { en: "Problem solving", fr: "Résolution de problèmes", v: .9 },
-  { en: "Adaptability", fr: "Adaptabilité", v: .95 },
+  { en: "Communication", fr: "Communication", v: .9 },
+  { en: "Stakeholders", fr: "Parties prenantes", v: .8 },
+  { en: "Problem solving", fr: "Résolution de problèmes", v: .8 },
+  { en: "Adaptability", fr: "Adaptabilité", v: .9 },
   { en: "Leadership", fr: "Leadership", v: .8 },
   { en: "Teamwork", fr: "Esprit d'équipe", v: .9 }
 ];
@@ -429,7 +429,7 @@ function drawRadar(p) {
   rx.fillStyle = accent + "55"; rx.fill();
   rx.strokeStyle = accent; rx.lineWidth = 4; rx.stroke();
   SOFT.forEach((s, i) => { const [x, y] = pt(i, R * s.v * p); rx.fillStyle = fg; rx.fillRect(x - 6, y - 6, 12, 12); });
-  rx.fillStyle = fg; rx.font = "700 7px Inconsolata, monospace"; rx.textBaseline = "middle";
+  rx.fillStyle = fg; rx.font = "700 20px Inconsolata, monospace"; rx.textBaseline = "middle";
   SOFT.forEach((s, i) => {
     const [x, y] = pt(i, R + 34);
     rx.textAlign = Math.abs(x - c) < 10 ? "center" : x > c ? "left" : "right";
