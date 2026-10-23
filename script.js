@@ -411,7 +411,7 @@ animLogo();
 const rc = document.getElementById("radar"), rx = rc.getContext("2d");
 let radarProgress = 0, radarVisible = false;
 function drawRadar(p) {
-  const w = rc.width, c = w / 2, R = w * .32, n = SOFT.length;
+  const w = rc.width, c = w / 2, R = w * .25, n = SOFT.length;
   const cs = getComputedStyle(root), fg = cs.getPropertyValue("--fg").trim();
   rx.clearRect(0, 0, w, w);
   const pt = (i, r) => [c + Math.cos(-Math.PI / 2 + i * 2 * Math.PI / n) * r, c + Math.sin(-Math.PI / 2 + i * 2 * Math.PI / n) * r];
