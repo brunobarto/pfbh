@@ -223,7 +223,7 @@ main { position: relative; z-index: 1; }
 
 /* RADAR */
 .radar-wrap { display: flex; justify-content: center; }
-#radar { width: min(560px, 90vw); height: auto; }
+#radar { width: min(1000px, 90vw); height: auto; }
 
 /* PROJECTS */
 .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px; }
