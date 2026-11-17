@@ -145,16 +145,7 @@ main { position: relative; z-index: 1; }
 .btn:hover { transform: translate(-3px, -3px); box-shadow: 9px 9px 0 var(--line); }
 .btn.ghost { background: transparent; color: var(--fg); }
 
-.bh { position: absolute; z-index: -1; opacity: .9; }
-.bh-circle { width: 34vw; height: 34vw; max-width: 150px; max-height: 150px; border-radius: 50%; background: var(--accent); right: -6vw; top: 14vh; animation: float 9s ease-in-out infinite; transition: background .4s; }
-.bh-square { width: 160px; height: 160px; background: var(--blue); right: 26vw; bottom: 10vh; animation: spin 24s linear infinite; }
-.bh-tri { width: 0; height: 0; border-left: 70px solid transparent; border-right: 70px solid transparent; border-bottom: 120px solid var(--yellow); right: 8vw; bottom: 16vh; animation: float 7s ease-in-out infinite reverse; }
-.bh-line { width: 40vw; height: 6px; background: var(--line); right: 0; top: 12vh; }
-@keyframes float { 50% { transform: translateY(-30px); } }
-@keyframes spin { to { transform: rotate(360deg); } }
-.scroll-hint { position: absolute; bottom: 30px; left: 50%; width: 26px; height: 42px; border: 3px solid var(--line); border-radius: 14px; transform: translateX(-50%); }
-.scroll-hint span { position: absolute; left: 50%; top: 6px; width: 5px; height: 8px; background: var(--accent); transform: translateX(-50%); animation: wheel 1.6s infinite; }
-@keyframes wheel { to { top: 24px; opacity: 0; } }
+
 
 /* REVEAL */
 .reveal { opacity: 0; transform: translateY(50px); transition: opacity .9s cubic-bezier(.2, .7, .2, 1), transform .9s cubic-bezier(.2, .7, .2, 1); }
