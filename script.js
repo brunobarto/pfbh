@@ -16,7 +16,7 @@ const T = {
     "skills.hint": " A global overview of my skills . Click an element to learn more.",
     "soft.title": "Soft skills",
     "projects.title": "Projects",
-    "contact.title": " Always interested in new projects, collaborations, and opportunities, let's build something together !",
+    "contact.title": " let's build something together !",
     code: "Code", live: "Live site"
   },
   fr: {
@@ -35,7 +35,7 @@ const T = {
     "skills.hint": "Un apercu visuel de mes compétences techniques. Cliquez sur un élément pour en savoir plus.",
     "soft.title": "Soft skills",
     "projects.title": "Projets",
-    "contact.title": "Toujours intéressé par de nouveaux projets, collaborations et opportunités, construisons quelque chose ensemble !",
+    "contact.title": "Construisons quelque chose ensemble !",
     code: "Code", live: "Site live"
   }
 };
