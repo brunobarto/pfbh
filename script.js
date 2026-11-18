@@ -148,13 +148,13 @@ const SOFT = [
 const PROJECTS = [
   { title: { en: "Sales Performance Dashboard", fr: "Dashboard Performance Commerciale" },
     desc: { en: "Interactive dashboard tracking revenue, margin and top products by region.", fr: "Dashboard interactif : CA, marge et meilleurs produits par région." },
-    tags: ["Power BI", "DAX", "SQL"], gh: "[github.com](https://github.com/your-username/sales-dashboard)", live: "[your-username.github.io](https://your-username.github.io/sales-dashboard/)" },
+    tags: ["Power BI", "DAX", "SQL"], gh: "[github.com](https://github.com/your-username/sales-dashboard)", live: "https://brunobarto-project1.vercel.app/" },
   { title: { en: "Payment Anomaly Detection", fr: "Détection d'Anomalies de Paiement" },
     desc: { en: "Python analysis flagging suspicious transactions and failure patterns.", fr: "Analyse Python repérant les transactions suspectes et les schémas d'échec." },
-    tags: ["Python", "Pandas", "Statistics"], gh: "[github.com](https://github.com/your-username/payment-anomaly)", live: "[your-username.github.io](https://your-username.github.io/payment-anomaly/)" },
+    tags: ["Python", "Pandas", "Statistics"], gh: "https://brunobarto.github.io/anomaly-detection/", live: "https://brunobarto-project2.vercel.app/" },
   { title: { en: "Customer Churn Analysis", fr: "Analyse du Churn Client" },
     desc: { en: "Segmentation and churn drivers with actionable retention recommendations.", fr: "Segmentation et facteurs de churn avec recommandations de rétention." },
-    tags: ["SQL", "Tableau", "Excel"], gh: "[github.com](https://github.com/your-username/churn-analysis)", live: "[your-username.github.io](https://your-username.github.io/churn-analysis/)" }
+    tags: ["SQL", "Tableau", "Excel"], gh: "[github.com](https://github.com/your-username/churn-analysis)", live: "https://brunobarto-project3.vercel.app/" }
 ];
 
 /* ============ STATE ============ */
